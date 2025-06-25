@@ -1,0 +1,9 @@
+aiohttp
+aiomysql
+pydantic
+google-generativeai
+langchain
+chromadb
+huggingface-hub
+sentence-transformers
+python-dotenv

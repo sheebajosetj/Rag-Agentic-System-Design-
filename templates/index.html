@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FDA RAG Chatbot</title>
+</head>
+<body>
+    <h1>Ask about recent FDA documents</h1>
+    <form method="post" action="/ask">
+        <input type="text" name="question" placeholder="Ask a question..." size="60" required>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if question %}
+        <h2>Your Question:</h2>
+        <p>{{ question }}</p>
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
+
