@@ -4,8 +4,8 @@ import chromadb
 from chromadb.config import Settings
 from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 import os
-from dotenv import load_dotenv  # ✅ Add this
-load_dotenv()  # ✅ Load .env
+from dotenv import load_dotenv  
+load_dotenv()
 
 # --- 1. Connect to PostgreSQL ---
 conn = psycopg2.connect(
@@ -23,7 +23,7 @@ rows = cursor.fetchall()
 print(f"📥 Retrieved {len(rows)} rows from PostgreSQL.")
 
 if not rows:
-    print("❌ No documents found.")
+    print("No documents found.")
     exit()
 
 # --- 2. Prepare documents ---
@@ -44,13 +44,13 @@ for i, text in enumerate(documents):
         embeddings=[embeddings[i]]
     )
 
-print(f"✅ Inserted {collection.count()} documents into ChromaDB.")
+print(f"Inserted {collection.count()} documents into ChromaDB.")
 
 # --- 6. Query test ---
 query = "What did the FDA announce?"
 results = collection.query(query_texts=[query], n_results=3)
 
-print("🔍 Query Results:")
+print("Query Results:")
 for doc in results['documents'][0]:
     print("-", doc[:200])  # print first 200 chars of each result
 

@@ -31,7 +31,7 @@ def ask():
     retrieved_docs = results["documents"][0]
 
     # 🔍 Print retrieved documents
-    print("📄 Retrieved docs from Chroma:")
+    print("Retrieved docs from Chroma:")
     for i, doc in enumerate(retrieved_docs):
         print(f"Doc {i+1}:\n{doc[:300]}\n---\n")  # show first 300 characters
 
