@@ -1,6 +1,6 @@
 # Agentic RAG - AI  
 
-Created by **FDAI**  
+
 
 ---
 
