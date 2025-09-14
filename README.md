@@ -1,7 +1,5 @@
 # Agentic RAG - AI  
 
-
-
 ---
 
 ## 📌 Overview  
