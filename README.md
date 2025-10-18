@@ -3,7 +3,7 @@
 --
 
 ## 📌 Overview  
-This project implements an **Agentic Retrieval-Augmented Generation (RAG) system** for working with U.S. Federal Register data. It fetches documents asynchronously, processes them into structured formats, stores them in ChromaDB, and enables natural language querying using **Gemini**.  
+This project implements an **Agentic Retrieval-Augmented Generation (RAG) system** for working with U.S. Federal Register data. it fetches documents asynchronously, processes them into structured formats, stores them in ChromaDB, and enables natural language querying using **Gemini**.  
 
 ---
 
